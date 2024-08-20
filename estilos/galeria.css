@@ -1,0 +1,92 @@
+img{
+    display: block;
+    width: 100%;
+    max-width: 199%;
+}
+.contenedor-flexible{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeria__img{
+    object-fit: cover;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.column--50-25{
+    width: 24.5%;
+}
+
+.galeria__img:hover{
+    transform: scale(1.05);
+}
+
+.galeria__img--grande{
+    height: 400px;
+}
+.galeria__img--chica{
+    height: 200px;
+}
+
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+/*centrar la imagen seleccionada*/
+.modal__contenido {
+    display: flex;
+    flex-direction: column; /* Esto coloca la imagen y el texto en una columna */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    overflow-y: auto; /*permite desplazar el contendo si es demasiado largo*/
+}
+
+.modal_img {
+    width: 50%;
+    max-width: 80%;
+    max-height: 70vh; /*limita la altura maxima para dejar espacio para el texto*/
+    object-fit: contain; /* Mantiene la proporción original sin cortar ni estirar */
+    margin-bottom: 20px; /* Añade espacio entre la imagen y el texto */
+}
+
+#modal_texto {
+    color: #fff; /* Asegúrate de que el texto sea visible sobre el fondo oscuro */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+    padding: 0 20px; /* Espaciado horizontal para mejor lectura */
+}
+
+/*estilo de boton*/
+.modal_boton{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background: #ff0000;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*funcion js que permite abrir la img*/
+.modal--open{
+    display: block;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Práctica 5</title>
+    <link rel="stylesheet" href="estilos/principal.css">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/banner.css">
+    <link rel="stylesheet" href="estilos/blog.css">
+    <link rel="stylesheet" href="estilos/info.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/fontello.css">
+    <link rel="stylesheet" href="estilos/galeria.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-efecto2">LAMBORGHINI</h1>
+            <input type="checkbox" id="menu-icn">
+            <label class="icon-menu" for="menu-icn"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="imagenes/banner.jpg" width="800">
+            <div class="contenedor">
+                <h2>Innovación y Prestigio en Movimiento</h2>
+                <p>Desde su fundación en 1963, Lamborghini ha redefinido el concepto de lujo y rendimiento en el mundo automotriz.</p>
+                <a href="">Leer más</a>
+            </div>
+        </section>
+
+        <div class="modal" id="modal">
+            <div class="modal__contenido">
+                <img src="" class="modal_img" id="modal_img">
+                <p id="modal_texto"></p> <!-- Aquí se muestra el texto de la imagen -->
+            </div>
+            <div class="modal_boton" id="modal_boton">x</div>
+        </div>
+
+        <div>
+            <h2>Estas son algunas fotos de Lamborghini</h2>
+        </div>
+
+        <div class="contenedor contenedor-flexible">
+            <div class="column column--50-25">
+                <img src="imagenes/img_grande1.jpg" class="galeria__img galeria__img--grande" data-text="Lamborghini Aventador: 
+                
+                El Aventador es un superdeportivo de alta gama con un diseño aerodinámico y agresivo que captura la esencia de Lamborghini. 
+                Es conocido por su perfil bajo, líneas afiladas y puertas de tijera, un sello distintivo de la marca. Su carrocería está hecha 
+                principalmente de fibra de carbono, lo que lo hace extremadamente ligero pero resistente.">
+
+                <img src="imagenes/img_chica1.png" class="galeria__img galeria__img--chica" data-text="Lamborghini Huracán: 
+                
+                El Huracán es un superdeportivo de tamaño más compacto en comparación con el Aventador, pero sigue siendo una máquina potente y de alta gama. Su diseño es elegante y afilado, con líneas aerodinámicas que le otorgan una apariencia veloz incluso cuando está detenido. Las puertas tienen un diseño más convencional en comparación con el Aventador, pero el estilo y la presencia en la carretera son inconfundiblemente Lamborghini.">
+            </div>
+
+            <div class="column column--50-25">
+                <img src="imagenes/img_chica2.webp" class="galeria__img galeria__img--chica" data-text="Lamborghini Sián: 
+                
+                Destaca por su diseño futurista y agresivo, con líneas afiladas y una silueta que evoca velocidad y poder. Aunque sigue los principios de diseño tradicionales de Lamborghini, el Sián introduce nuevos elementos que lo diferencian, como una aerodinámica avanzada y detalles inspirados en los modelos clásicos de la marca, como el Lamborghini Countach.">
+
+                <img src="imagenes/img_grande2.jpg" class="galeria__img galeria__img--grande" data-text="Lamborghini Huracán Performante: 
+                
+                Combina la elegancia y la potencia del Huracán original con mejoras significativas en su rendimiento y aerodinámica. Su diseño es agresivo y funcional, con un enfoque en reducir el peso y maximizar el rendimiento en circuito. El uso de materiales avanzados y la implementación de la tecnología ALA (Aerodinamica Lamborghini Attiva) son las claves que diferencian al Performante de otros modelos de Huracán.">
+            </div>
+
+            <div class="column column--50-25">
+                <img src="imagenes/img_grande3.jpg" class="galeria__img galeria__img--grande" data-text="Lamborghini Huracán: 
+                
+                Es un superdeportivo que ofrece una mezcla de rendimiento, tecnología y diseño, encapsulando el espíritu de Lamborghini en un paquete ligeramente más accesible que el Aventador. Su motor V10 atmosférico ofrece una experiencia de conducción emocionante, mientras que su diseño y atención al detalle hacen que se destaque en cualquier lugar. Es un coche que combina la elegancia con el poder bruto, diseñado tanto para la carretera como para la pista.">
+
+                <img src="imagenes/img_chica3.jpg" class="galeria__img galeria__img--chica" data-text="Lamborghini Huracán EVO: 
+                
+                Mantiene el diseño agresivo y distintivo del Huracán, pero con un enfoque renovado en la aerodinámica y la dinámica de conducción. Su apariencia es más refinada, con líneas más fluidas y elementos aerodinámicos integrados que no solo mejoran el rendimiento, sino que también realzan su estética. El Huracán EVO está disponible tanto en versiones de tracción trasera (RWD) como en tracción total (AWD), lo que permite una experiencia de conducción personalizada según las preferencias del conductor.">
+            </div>
+
+            <div class="column column--50-25">
+                <img src="imagenes/img_chica4.avif" class="galeria__img galeria__img--chica" data-text="Lamborghini Huracán STO: 
+                
+                Destaca por su enfoque en la reducción de peso, la aerodinámica optimizada y la conducción orientada a la pista. Es un coche que lleva al límite la esencia del Huracán, con un diseño agresivo, componentes de carreras y una dinámica de conducción que pone al conductor en el centro de la experiencia. El STO es la máxima expresión del rendimiento de Lamborghini en la gama Huracán, fusionando tecnología de competición con la practicidad de un coche de carretera.">
+
+                <img src="imagenes/img_grande4.jpg" class="galeria__img galeria__img--grande" data-text="Lamborghini Huracán LP 640-4 Performante: 
+                
+                Lleva al límite el concepto del superdeportivo, incorporando innovaciones que lo convierten en un vehículo de alta precisión y velocidad. Su diseño es agresivo y funcional, con un enfoque en mejorar la aerodinámica y reducir el peso, lo que se traduce en un manejo más ágil y un rendimiento superior.">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p class="pie">CopyRight &copy; Denisse Gpe. Monroy Angeles</p>
+
+            <div class="sociales">
+                <a href="https://www.instagram.com/" class="icon-instagram"></a>
+                <a href="https://www.facebook.com/?locale=es_LA" class="icon-facebook"></a>
+                <a href="https://x.com/" class="icon-twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.galeria__img');
+            const modal = document.getElementById('modal');
+            const modalImg = document.getElementById('modal_img');
+            const modalTexto = document.getElementById('modal_texto');
+            const modalBoton = document.getElementById('modal_boton');
+
+            // Añadir evento click a cada imagen
+            images.forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = 'flex';
+                    modalImg.src = this.src;
+                    modalTexto.innerText = this.getAttribute('data-text');
+                });
+            });
+
+            // Cerrar modal al hacer clic en el botón de cerrar
+            modalBoton.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
